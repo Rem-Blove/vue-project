@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "optionsDefinition": {
+      "type": "object",
+      "properties": {
+        "arrowParens": {
+          "description": "Include parentheses around a sole arrow function parameter.",
+          "default": "always",
+          "oneOf": [
+            {
+              "enum": [
+                "avoid"
+              ],
+              "description": "Omit parens when possible. Example: `x => x`"
+            }
+          ]
+        },
+        "bracketSameLine": {
+          "description": "Put > of opening tags on the last line instead of on a new line.",
+          "default": true,
+          "type": "boolean"
+        },
+        "htmlWhitespaceSensitivity": {
+          "description": "How to handle whitespaces in HTML.",
+          "default": "css",
+          "oneOf": [
+            {
+              "enum": [
+                "ignore"
+              ],
+              "description": "Whitespaces are considered insensitive."
+            }
+          ]
+        },
+        "printWidth": {
+          "description": "The line length where Prettier will try wrap.",
+          "default": 80,
+          "type": "integer"
+        },
+        "semi": {
+          "description": "Print semicolons.",
+          "default": false,
+          "type": "boolean"
+        },
+        "singleQuote": {
+          "description": "Use single quotes instead of double quotes.",
+          "default": true,
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}
