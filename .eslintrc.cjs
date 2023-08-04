@@ -21,11 +21,13 @@ module.exports = {
         semi: false,
         singleQuote: true,
         arrowParens: 'avoid',
-        bracketSameLine: false
+        bracketSameLine: false,
+        endOfLine: 'auto'
       }
     ],
     '@typescript-eslint/promise-function-async': 'off',
-    'vue/multi-word-component-names': 0,
-    '@typescript-eslint/space-before-function-paren': 0
+    'vue/multi-word-component-names': 'off',
+    '@typescript-eslint/space-before-function-paren': 'off',
+    '@typescript-eslint/no-unused-vars': 'error'
   }
 }
